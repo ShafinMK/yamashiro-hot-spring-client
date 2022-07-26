@@ -1,0 +1,30 @@
+
+.large-button{
+    height: 60px;
+    width: 200px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.transparent-button-white{
+    background-color: transparent;
+    border: 2px solid white;
+    color:white;
+}
+.transparent-button-black{
+    background-color: transparent;
+    border: 2px solid black;
+    color:black;
+}
+.button-black{
+    background-color: black;
+    color: white;
+    transition-duration: .1s;
+}
+.button-black:hover{
+    background-color: wheat;
+    color: black;
+}
+    

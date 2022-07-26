@@ -1,0 +1,14 @@
+.service-icon{
+    width: 150px;
+    cursor: pointer;
+}
+.nav-item .active{
+    /* text-decoration: underline; */
+    border-bottom: 2px solid gray;
+}
+.service-intro{
+    width: 300px;
+}
+/* .tab .active{
+    background-color: blue;
+} */

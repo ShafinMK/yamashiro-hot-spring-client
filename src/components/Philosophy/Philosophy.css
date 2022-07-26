@@ -1,0 +1,7 @@
+.philosophy-bg{
+    
+    background-image: linear-gradient(to bottom, rgba(69, 69, 71, 0.641), rgba(64, 64, 64, 0.344)), url('../../images/banners/philosophy.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}

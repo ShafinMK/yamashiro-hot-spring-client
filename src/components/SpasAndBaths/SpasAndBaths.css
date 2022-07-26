@@ -1,0 +1,25 @@
+.spa-and-bath-bg{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.641), rgba(64, 64, 64, 0.344)), url('../../images/banners/spAndBath.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+.outdoor-bath-bg{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.641), rgba(255, 255, 255, 0.2)), url('../../images/banners/outdoorBath.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+.indoor-bath-bg{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.641), rgba(255, 255, 255, 0.2)), url('../../images/banners/indoorBath.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+.forest-hot-water-bg{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.641), rgba(255, 255, 255, 0.2)), url('../../images/banners/foresthotwater.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}

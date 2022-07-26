@@ -1,0 +1,35 @@
+.slide {
+    transform: scale(.5);
+    transition-duration: 500ms;
+    opacity: .5;
+
+}
+.slide img{
+    /* width: 20rem; */
+    /* margin: 0 auto; */
+}
+.activeSlide{
+    transform: scale(1);
+    transition-duration: 500ms;
+}
+
+.arrow{
+    /* background-color: white; */
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.right{
+    /* width: 100%; */
+    /* text-align: center; */
+    right: 45%;
+    top: 100%;
+}
+.left{
+    left: 45%;
+    /* width: 100%; */
+    /* text-align: center; */
+    top: 100%;
+    
+}
