@@ -1,0 +1,6 @@
+.login-bg{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://cdn.pixabay.com/photo/2015/08/25/03/51/toner-906142_960_720.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}

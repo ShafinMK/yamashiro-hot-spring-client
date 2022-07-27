@@ -10,6 +10,8 @@ import Footer from "./components/Footer/Footer";
 import Team from "./components/Team/Team";
 import Dining from "./components/Dining/Dining";
 import SpasAndBaths from "./components/SpasAndBaths/SpasAndBaths";
+import LogIn from "./components/LogIn/LogIn";
+import SignUp from "./components/SignUp/SignUp";
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
           <Route path="/team" element={<Team/>}></Route>
           <Route path="/dining" element={<Dining/>}></Route>
           <Route path="/spasandbaths" element={<SpasAndBaths/>}></Route>
+          <Route path="/login" element={<LogIn/>}></Route>
+          <Route path="/signup" element={<SignUp/>}></Route>
 
         </Routes>
         <Footer></Footer>

@@ -98,7 +98,7 @@ function SampleNextArrow(props) {
       className='arrow right'
       // style={{ display: "block", background: "red" }}
       onClick={onClick}
-    ><i class="fa-solid fa-circle-arrow-right"></i></div>
+    ><i className="fa-solid fa-circle-arrow-right"></i></div>
   );
 }
 
@@ -109,6 +109,6 @@ function SamplePrevArrow(props) {
       className=' arrow left'
       // style={{ ...style, display: "block", background: "green" }}
       onClick={onClick}
-    ><i class="fa-solid fa-circle-arrow-left"></i></div>
+    ><i className="fa-solid fa-circle-arrow-left"></i></div>
   );
 }

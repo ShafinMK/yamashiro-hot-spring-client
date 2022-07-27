@@ -1,0 +1,8 @@
+.services-bg{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.344)), url('https://cdn.pixabay.com/photo/2016/10/11/12/36/massage-therapy-1731456_960_720.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    /* position: fixed; */
+    width: 100%;
+}

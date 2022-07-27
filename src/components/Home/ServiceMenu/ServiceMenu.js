@@ -48,19 +48,19 @@ const ServiceMenu = () => {
                 </li>
             </ul>
             <div className="tab-content row justify-content-center" id="pills-tabContent">
-                <div className="tab-pane fade show active col-12 col-lg-5" id="pills-spa-programs" role="tabpanel" aria-labelledby="pills-spa-programs-tab" tabindex="0">
+                <div className="tab-pane fade show active col-12 col-lg-5" id="pills-spa-programs" role="tabpanel" aria-labelledby="pills-spa-programs-tab" tabIndex="0">
                     <p className=''>Our crazy-talented master stylists will connect with you on a personal level, using their creativity and skill to envision a natural, ready-to-wear style that embraces your individuality and lifestyle.</p>
                 </div>
-                <div className="tab-pane fade col-12 col-lg-5" id="pills-massages" role="tabpanel" aria-labelledby="pills-massages-tab" tabindex="0">
+                <div className="tab-pane fade col-12 col-lg-5" id="pills-massages" role="tabpanel" aria-labelledby="pills-massages-tab" tabIndex="0">
                     We provide a wide range of massages: sports, relaxing, aroma therapy, full body, face massages and a lot more. All our masseurs have medical education and official certificates.
                 </div>
-                <div className="tab-pane fade col-12 col-lg-5" id="pills-facials" role="tabpanel" aria-labelledby="pills-facials-tab" tabindex="0">
+                <div className="tab-pane fade col-12 col-lg-5" id="pills-facials" role="tabpanel" aria-labelledby="pills-facials-tab" tabIndex="0">
                     Prolong youth by regularly attending our cosmetologists. Treat yourself with professional facial using the best cosmetics.
                 </div>
-                <div className="tab-pane fade col-12 col-lg-5" id="pills-body-treatments" role="tabpanel" aria-labelledby="pills-body-treatments-tab" tabindex="0">
+                <div className="tab-pane fade col-12 col-lg-5" id="pills-body-treatments" role="tabpanel" aria-labelledby="pills-body-treatments-tab" tabIndex="0">
                     Our crazy-talented master stylists will connect with you on a personal level, using their creativity and skill to envision a natural, ready-to-wear style that embraces your individuality and lifestyle.
                 </div>
-                <div className="tab-pane fade col-12 col-lg-5" id="pills-for-couples" role="tabpanel" aria-labelledby="pills-for-couples-tab" tabindex="0">
+                <div className="tab-pane fade col-12 col-lg-5" id="pills-for-couples" role="tabpanel" aria-labelledby="pills-for-couples-tab" tabIndex="0">
                     All massages and spa programs are available for couples. This mean that you'll have your session at the same time in the same room. What can be more romantic and relaxing?
                 </div>
             </div>

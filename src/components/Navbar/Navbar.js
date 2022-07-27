@@ -4,10 +4,11 @@ import Slider from 'react-slick/lib/slider';
 import './Navbar.css';
 import '../../stylesheets/buttons.css';
 import '../../stylesheets/font and Color.css';
+import useFirebase from '../../hooks/useFirebase';
 
 const Navbar = () => {
 
-
+const {user,  logOut} = useFirebase();
 
     return (
         <div className='overflow-hidden '>
@@ -59,6 +60,13 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <Link to='/spasandbaths' className=' navItem' style={{ textDecoration: 'none' }}>Spas & baths </Link>
                             </li>
+                            {
+                                user?.emailVerified?<button onClick={logOut} className='btn btn-danger'>Log Out</button>:
+                                <li className="nav-item">
+                                <Link to='/login' className=' navItem' style={{ textDecoration: 'none' }}>Log In/Sign Up </Link>
+                            </li>
+                            }
+                            
 
 
                         </ul>
@@ -70,7 +78,7 @@ const Navbar = () => {
 
 
             {/* for small screeen offcanvas  */}
-            <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div className="offcanvas-header">
                     <h5 className="offcanvas-title" id="offcanvasRightLabel">Yamashiro Hot Spring</h5>
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>

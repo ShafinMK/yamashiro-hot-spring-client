@@ -5,7 +5,17 @@
     padding: 10px 30px;
     border: none;
     border-radius: 10px;
+    transition: transform .5s;
 
+}
+.large-button:hover{
+    transform: scale(1.1);
+}
+.btn{
+    transition: transform .5s;
+}
+.btn:hover{
+    transform: scale(1.1);
 }
 
 .transparent-button-white{
