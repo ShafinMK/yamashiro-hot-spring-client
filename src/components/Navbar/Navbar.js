@@ -89,12 +89,12 @@ const Navbar = () => {
 
 
             {/* for small screeen offcanvas  */}
-            <div className="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div className="offcanvas offcanvas-end"  tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div className='abg-image'></div>
                 <div className='abg-text'>
                     <div className="offcanvas-header ">
                         <div className='d-flex justify-content-center align-items-center py-2 py-md-3'>
-                            <img src={user.photoURL} className='img-fluid rounded-circle' width='30' alt="" />
+                            <img src={user.photoURL?user.photoURL: require('../../images/sidenavIcons/user.png')} className='img-fluid rounded-circle' width='30' alt="" />
                             <span className='text-light ps-1'>{user.email}</span>
                         </div>
 
@@ -201,8 +201,7 @@ const Navbar = () => {
             </div>
 
 
-
-
+            
 
         </div>
     );
