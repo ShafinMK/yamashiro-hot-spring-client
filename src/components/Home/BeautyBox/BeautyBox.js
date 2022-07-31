@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import './BeautyBox.css';
 import '../../../stylesheets/backgrounds.css';
 import '../../../stylesheets/buttons.css';
+import { motion } from "framer-motion"
 
 const BeautyBox = () => {
     const settings = {
@@ -48,9 +49,9 @@ const BeautyBox = () => {
                     </div>
                     <div className="col-12 col-lg-6">
                         <h1 className=''>Beauty Box</h1>
-                        <p className='my-5'>Our crazy-talented master stylists will connect with you on a personal level, using their creativity and skill to envision a natural, ready-to-wear style that embraces your individuality and lifestyle. Our crazy-talented master stylists will connect with you on a personal level, using their creativity and skill to envision a natural, ready style that embraces your individuality and lifestyle.</p>
+                        <p className='my-5 light-black'>Our crazy-talented master stylists will connect with you on a personal level, using their creativity and skill to envision a natural, ready-to-wear style that embraces your individuality and lifestyle. Our crazy-talented master stylists will connect with you on a personal level, using their creativity and skill to envision a natural, ready style that embraces your individuality and lifestyle.</p>
                         <Link to='/shop'>
-                            <button className='large-button transparent-button-black'>Shop Now</button>
+                            <motion.button whileHover={{ scale: 1.1, backgroundColor:'black', color:'white' }} whileTap={{ scale: 0.9 }} className='large-button transparent-button-black'>Shop Now</motion.button>
                         </Link>
 
                     </div>

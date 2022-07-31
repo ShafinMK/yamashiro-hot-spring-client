@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .green{
     color: #60f375;
 }
@@ -12,3 +19,40 @@
 .darkish-green{
     color: #53604b ;
 }
+.steel-teal{
+    color: #698e87;
+}
+.orange{
+    color: #f47e07;
+}
+.pacifico-font{
+    font-family: 'Pacifico', cursive;
+}
+
+.lobstar-font{
+    font-family: 'Lobster', cursive;
+}
+.pattay-font{
+    font-family: 'Pattaya', sans-serif;
+}
+.meriendaOne-font{
+    font-family: 'Merienda One', cursive;
+}
+.italiano-font{
+    font-family: 'Italianno', cursive;
+}
+.salsa-font{
+    font-family: 'Salsa', cursive;
+}
+h1{
+    font-family: 'Salsa', cursive;
+    /* font-weight: bold;
+    font-size: 50px; */
+}
+body{
+    font-family: 'Merienda One', cursive;
+}
+.light-black{
+    color:rgba(57, 57, 57, 0.64)
+}
+

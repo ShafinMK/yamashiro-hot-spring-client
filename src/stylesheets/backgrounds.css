@@ -2,6 +2,10 @@
     background-color: rgba(246, 231, 203, 0.592);
 }
 
+.khaki{
+    background-color: #ac8c69;
+}
+
 .light-blue{
     background-color: #e5eff6;
 }
@@ -13,3 +17,91 @@
 .light-green{
     background-color: rgb(230, 251, 230);
 }
+
+.form-bg{
+    background-image: linear-gradient(to bottom, rgba(235, 230, 230, 0.709), rgba(255, 255, 255, 0.532)), url('https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    background-attachment: fixed;
+}
+.spa-bath-bg{
+    background-image: linear-gradient(to bottom, rgba(235, 230, 230, 0.0), rgba(255, 255, 255, 0.0)), url('https://img.freepik.com/free-photo/green-branches-table_23-2147955842.jpg?w=1380&t=st=1659265174~exp=1659265774~hmac=c345f1e64c190982ac130604499629e8f404ca976642da00054bf453ffc8ac3d');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.services-page-bg{
+    background-image: linear-gradient(to bottom, rgba(235, 230, 230, 0.709), rgba(255, 255, 255, 0.532)), url('https://cdn.pixabay.com/photo/2016/10/17/14/31/background-1747777_960_720.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.story-bg{
+    background-image: linear-gradient(to bottom, rgba(235, 230, 230, 0.709), rgba(255, 255, 255, 0.532)), url('https://images.unsplash.com/photo-1497211419994-14ae40a3c7a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.contact-bg{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.641), rgba(64, 64, 64, 0.344)), url('https://images.unsplash.com/photo-1555662800-92f44b37a43d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=909&q=80');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+/* .dinig-bg{
+    background-image: linear-gradient(to bottom, rgba(235, 230, 230, 0.709), rgba(255, 255, 255, 0.532)), url('https://images.unsplash.com/photo-1572916118992-5e36d71f7f5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+} */
+.dinig-bg{
+    background-image: linear-gradient(to bottom, rgba(214, 214, 214, 0.4), rgba(207, 207, 207, 0.4)), url('https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80');
+    background-position: center; 
+    background-repeat: repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+.home-bg{
+    background-image: linear-gradient(to bottom, rgba(214, 214, 214, 0.0), rgba(207, 207, 207, 0.0)), url('https://img.freepik.com/free-photo/green-branches-table_23-2147955842.jpg?w=1380&t=st=1659265174~exp=1659265774~hmac=c345f1e64c190982ac130604499629e8f404ca976642da00054bf453ffc8ac3d');
+    background-position: center; 
+    background-repeat: repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.service-card{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.807), rgba(255, 255, 255, 0.532)), url('https://images.unsplash.com/photo-1575330719343-23de81f5b995?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1190&q=80');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+.userbooking-card{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.807), rgba(255, 255, 255, 0.532)), url('https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-2458.jpg?w=1380&t=st=1659189359~exp=1659189959~hmac=49815fdeefd317297f57559dbb065f48057102a9edf87281e0162b656079efaa');
+    /* background-image: url('https://img.freepik.com/free-vector/random-square-halftone-pattern_1409-1062.jpg?w=1380&t=st=1659188857~exp=1659189457~hmac=15809e1a015b097386d6a783efc094082de519f7a460c3f52fb7aeec7055c2a9'); */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+.userbooking-bg{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.807), rgba(255, 255, 255, 0.532)), url('https://img.freepik.com/free-vector/white-abstract-background-3d-paper-style_23-2148398981.jpg?w=1380&t=st=1659187487~exp=1659188087~hmac=ddca5f53a4607dca42075e41debb00769f084e0dcd0d97b7a310817867ca90d8');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.food-card-bg{
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+

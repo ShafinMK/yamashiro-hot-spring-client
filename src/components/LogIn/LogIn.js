@@ -2,14 +2,30 @@ import React from 'react';
 import './LogIn.css';
 import { useForm } from "react-hook-form";
 import useFirebase from '../../hooks/useFirebase';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const LogIn = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const { signInwithGoogle, signInWithEmailandPass} = useFirebase();
+    const location = useLocation();
+    const navigate = useNavigate();
+    const from = location.state?.from?.pathname || '/';
+    const handleGoogleSignIn = ()=>{
+        signInwithGoogle()
+        .then(result =>{
+            navigate(from, {replace:true});
+            console.log(from);
+        })
+        
+        
+    }
     const onSubmit = data => {
-        console.log(data);
-        signInWithEmailandPass(data.email, data.password);
+        // console.log(data);
+        signInWithEmailandPass(data.email, data.password)
+        .then(result =>{
+            navigate(from, {replace:true});
+            console.log(from);
+        })
     };
     return (
         <div>
@@ -42,7 +58,7 @@ const LogIn = () => {
                                     <button className='btn btn-primary px-4 py-2'>Log In</button>
                                 </div>
                             </form>
-                            <button onClick={signInwithGoogle} className='btn btn-light border my-5'>Sign in with Google</button>
+                            <button onClick={handleGoogleSignIn} className='btn btn-light border my-5'>Sign in with Google</button>
                             <br />
                             <Link to='/signup'>Don't have an account? Sign Up now</Link>
                         </div>

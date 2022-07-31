@@ -11,20 +11,22 @@ import ServiceMenu from './ServiceMenu/ServiceMenu';
 import WorkingTime from './WorkingTime/WorkingTime';
 
 const Home = () => {
-   
-   
+
+
     return (
-        <div className='overflow-hidden'>
-             <HomeSlider></HomeSlider>
-             <ServiceMenu></ServiceMenu>
-             <HomePhilosophy></HomePhilosophy>
-             <ImageSlide></ImageSlide>
-             <GiftCards></GiftCards>
-             <BeautyBox></BeautyBox>
-             <Review></Review>
-             <NewsLetter></NewsLetter>
-             <Gallery></Gallery>
-             <WorkingTime></WorkingTime>
+        <div className='overflow-hidden '>
+            <HomeSlider></HomeSlider>
+            <div className='home-bg'>
+                <ServiceMenu></ServiceMenu>
+                <HomePhilosophy></HomePhilosophy>
+                <ImageSlide></ImageSlide>
+                <GiftCards></GiftCards>
+                <BeautyBox></BeautyBox>
+                <Review></Review>
+                <NewsLetter></NewsLetter>
+                <Gallery></Gallery>
+                <WorkingTime></WorkingTime>
+            </div>
         </div>
     );
 };

@@ -1,0 +1,11 @@
+.gallery-img{
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    transition-duration: .5s;
+    /* filter: grayscale(90%); */
+}
+.gallery-img:hover{
+    /* opacity: .9; */
+    filter: grayscale(50%);
+}

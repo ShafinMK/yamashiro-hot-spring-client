@@ -30,7 +30,7 @@ const Team = () => {
                 <div className='py-5'></div>
                 <div className='row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4'>
                     {
-                        members.map(member => <Member member={member}></Member>)
+                        members.map(member => <Member key={member.image} member={member}></Member>)
                     }
                 </div>
                 <div className='py-5'></div>

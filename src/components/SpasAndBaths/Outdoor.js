@@ -28,7 +28,7 @@ const Outdoor = () => {
                                 <img src='https://i.ibb.co/db4h1f8/mountain-water-slide.jpg' className='img-fluid' alt="" />
                             </div>
                             <div className="col-12 col-lg-5 p-4">
-                                <h1>Rodeo Mountain <br /> water slides</h1>
+                                <h1 className='pacifico-font'>Rodeo Mountain <br /> water slides</h1>
                                 <p className='mt-3'>Experience the thrill of river rapids on exciting water slides that are often featured in Japanese TV shows and magazines. Warm water keeps you cozy even in cold winter months, and you can admire a great vista of Hakone from the top. Try all three slides to compare their turns! (Minimum guest height: 110 cm)</p>
                             </div>
 
@@ -36,7 +36,7 @@ const Outdoor = () => {
                         {/* outdoor hot spring  */}
                         <div className="row mt-5  align-items-center">
                             <div className="col-12 col-lg-5 p-4">
-                                <h1>Outdoor hot spring <br /> with scenic view</h1>
+                                <h1 className='pacifico-font'>Outdoor hot spring <br /> with scenic view</h1>
                                 <p className='mt-3'>Relax surrounded by nature in our 40-meter hot spring bath while soaking up the beautiful sight of Hakone’s mountains and Sagami Bay when the weather is clear.</p>
 
                             </div>
@@ -50,7 +50,7 @@ const Outdoor = () => {
                                 <img src='https://i.ibb.co/BNcyd5G/cave-bath.jpg' className='img-fluid' alt="" />
                             </div>
                             <div className="col-12 col-lg-5 p-4">
-                                <h1>Cave baths</h1>
+                                <h1 className='pacifico-font'>Cave baths</h1>
                                 <p className='mt-3'>Explore the mysterious hot spring caves beneath Rodeo Mountain and discover the stunning aquariums of swaying jellyfish.</p>
 
                             </div>
@@ -59,7 +59,7 @@ const Outdoor = () => {
                         {/* dragons waterfall */}
                         <div className="row mt-5  align-items-center">
                             <div className="col-12 col-lg-5 p-4">
-                                <h1>Dragon’s waterfall</h1>
+                                <h1 className='pacifico-font'>Dragon’s waterfall</h1>
                                 <p className='mt-3'>Stand beneath the waterfall and feel it splash your body. Or play in its warm pool while relishing Hakone’s natural scenery.</p>
 
                             </div>

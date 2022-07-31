@@ -1,5 +1,46 @@
-.navItem{
-    padding: 0px 20px;
-    color: rgb(66, 66, 66);
+.navItem {
+    /* padding: 0px 20px; */
+    /* color: rgb(66, 66, 66); */
+    color: #faf1e0;
+    transition-duration: .5s;
+    font-size: 15px;
+}
+.navItem:hover{
+    color: #f73f13 ;
+}
+.navItem:focus{
+    color: #f73f13 ;
+}
+.navItem:active{
+    text-decoration: underline;
 }
 
+
+.navbar-style {
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8)), url('https://images.unsplash.com/photo-1527100673774-cce25eafaf7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+   
+  
+}
+
+.offcanvas{
+    background-color: transparent;
+    /* filter: blur(8px); */
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/opacity/see-through */
+    /* background-color: rgba(255,255,255, 0.8);  */
+}
+.offcanvas-body ul{
+    list-style: none;
+}
+.sideItem{
+    font-size: 12px;
+    color: white;
+}
+.sideItem:focus{
+    color: #f73f13;
+}

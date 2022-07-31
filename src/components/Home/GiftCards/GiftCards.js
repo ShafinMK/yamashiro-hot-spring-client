@@ -22,9 +22,9 @@ const GiftCards = () => {
                 <div className="row py-5 my-5">
                     <div className="col-12 col-lg-5">
                         <h1 className=''>Gift Cards</h1>
-                        <p className='my-5'>Our crazy-talented master stylists will connect with you on a personal level, using their creativity and skill to envision a natural, ready-to-wear style that embraces your individuality and lifestyle. Our crazy-talented master stylists will connect with you on a personal level, using their creativity and skill to envision a natural, ready style that embraces your individuality and lifestyle.</p>
+                        <p className='my-5 light-black'>Our crazy-talented master stylists will connect with you on a personal level, using their creativity and skill to envision a natural, ready-to-wear style that embraces your individuality and lifestyle. Our crazy-talented master stylists will connect with you on a personal level, using their creativity and skill to envision a natural, ready style that embraces your individuality and lifestyle.</p>
                         <Link to='/giftcards'>
-                            <button className='large-button transparent-button-black'>Learn More</button>
+                            <button className='btn btn-outline-dark px-5 py-3'>Learn More</button>
                         </Link>
 
                     </div>

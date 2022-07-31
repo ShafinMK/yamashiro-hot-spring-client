@@ -72,7 +72,7 @@ const Review = () => {
 
           {
             reviews.map((review, index) => (
-              <div className={(index === reviewIndex) ? 'activeSlide' : 'slide'}>
+              <div className={(index === reviewIndex) ? 'activeSlide' : 'slide'} key={review.name}>
                 <div className='py-5'>
                   <h5><q>{review.review}</q></h5>
                   <h6 className='my-4'>{review.name}</h6>

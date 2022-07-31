@@ -6,14 +6,27 @@ import useFirebase from '../../hooks/useFirebase';
 
 const SignUp = () => {
     const [ verification , setVerification] = useState(false);
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const { signInwithGoogle, signUpwithEmailandPass } = useFirebase();
+    const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
+    const { signInwithGoogle, signUpwithEmailandPass, error,setError, emailVerification } = useFirebase();
     const password = watch('password');
     const onSubmit = data => {
         console.log(data);
         if(data.password === data.retypePassword){
-            signUpwithEmailandPass(data.email, data.password);
-            setVerification(true);
+            signUpwithEmailandPass(data.email, data.password)
+            .then((res)=>{
+                console.log(res.user);
+                emailVerification()
+                .then((res) => {
+                    console.log(res);
+                    setVerification(true);
+                    setError('');
+                    reset();
+                })
+            })
+            .catch(error =>{
+                setError(error.message);
+            })
+            // setVerification(true);
         }
         else{
             data.retypePassword = 'Did not match'
@@ -39,7 +52,8 @@ const SignUp = () => {
                             <div className='text-center'>
                                 
                                 <form onSubmit={handleSubmit(onSubmit)}>
-                                    <div className="mb-3">
+                                <span className='text-danger'>{error.split('Firebase: Error')}</span>
+                                    <div className="my-3">
                                         <input type='email' className='form-control' placeholder='Email' {...register("email", { required: "Email address required" })} />
                                         {/* errors will return when field validation fails  */}
                                         {errors.email && <span>{errors.email.message}</span>}
@@ -64,7 +78,7 @@ const SignUp = () => {
                                 {
                                     verification?<p>Verification Email Sent. <a href="https://mail.google.com/"  target="_blank">Click here</a>
                                     <br />
-                                    <span className='text-danger'>(Check your spam folder if not found)</span></p>:""
+                                    <span className='text-danger'>(Check your spam folder if not found)</span></p>:''
                                 }
                                 <button onClick={signInwithGoogle} className='btn btn-light border my-5'>Sign in with Google</button>
                                 <br />

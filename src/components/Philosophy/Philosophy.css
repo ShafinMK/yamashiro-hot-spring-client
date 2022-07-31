@@ -4,4 +4,12 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
+    background-attachment: fixed;
+}
+
+.feature{
+   transition-duration: .7s;
+}
+.feature:hover{
+    transform: scale(1.05);
 }

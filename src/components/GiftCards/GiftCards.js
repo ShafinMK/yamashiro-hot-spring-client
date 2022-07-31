@@ -19,33 +19,33 @@ const GiftCards = () => {
                 <div className='container'>
                     <h1 className='text-center py-5'>Benefits</h1>
                     <div className='row text-center  py-5 '>
-                        <div className=' col-12 col-md-6 col-lg-4 p-3 '>
+                        <div className=' col-12 col-md-6 col-lg-4 p-3 feature '>
                             <img src={require('../../images/icons/give.png')} className='img-fluid' width='60' alt="" />
                             <h6 className='py-3'>Easy to give</h6>
-                            <span>Electronic gift card can be sent with a</span>
+                            <span className= 'light-black'>Electronic gift card can be sent with a</span>
                             <br />
-                            <span>coule of clicks. Easy as is, fastest</span>
+                            <span className= 'light-black'>coule of clicks. Easy as is, fastest</span>
                             <br />
-                            <span>delivery possible.</span>
+                            <span className= 'light-black'>delivery possible.</span>
                         </div>
-                        <div className=' col-12 col-md-6 col-lg-4 p-3 '>
+                        <div className=' col-12 col-md-6 col-lg-4 p-3 feature '>
                             <img src={require('../../images/icons/price.png')} className='img-fluid' width='60' alt="" />
                             <h6 className='py-3'>No Amount Limitations</h6>
-                            <span>You can choose any amount you wish</span>
+                            <span className= 'light-black'>You can choose any amount you wish</span>
                             <br />
-                            <span>and it will be applied to the gift card.</span>
+                            <span className= 'light-black'>and it will be applied to the gift card.</span>
                             <br />
-                            <span>Very flexible.</span>
+                            <span className= 'light-black'>Very flexible.</span>
                             <br />
                         </div>
-                        <div className=' col-12 col-md-6 col-lg-4 p-3 '>
+                        <div className=' col-12 col-md-6 col-lg-4 p-3 feature '>
                             <img src={require('../../images/icons/Personalize.png')} className='img-fluid' width='60' alt="" />
                             <h6 className='py-3'>Nice & Personalized</h6>
-                            <span>There is also a possibility to write a</span>
+                            <span className= 'light-black'>There is also a possibility to write a</span>
                             <br />
-                            <span>personalized message: nice, funny,</span>
+                            <span className= 'light-black'>personalized message: nice, funny,</span>
                             <br />
-                            <span>just as you wish.</span>
+                            <span className= 'light-black'>just as you wish.</span>
                         </div>
 
 
@@ -55,15 +55,16 @@ const GiftCards = () => {
 
             {/* cards section  */}
 
-            <section className='light-pink'>
+            <section className=' gift-bg-parallax'>
 
-                <div className='container my-5 py-5 text-center'>
+                <div className='gift-parallax-text'>
+                <div className='container my-5 py-5 text-center '>
                     <div className="row align-items-center">
 
                         <div className="col-12 col-md-6 px-lg-5">
                             <img src={require('../../images/gift-cards/1.jpeg')} className='img-fluid p-5' alt="" />
                             <h5 className='py-4'>Physical Gift Card</h5>
-                            <p>When in doubt what to buy as a gift, this is the
+                            <p className= ''>When in doubt what to buy as a gift, this is the
                                 <br />
                                 best option. Our gift cards have no expiration
                                 <br />
@@ -74,7 +75,7 @@ const GiftCards = () => {
                         <div className="col-12 col-md-6  px-lg-5">
                             <img src={require('../../images/gift-cards/2.jpeg')} className='img-fluid p-5' alt="" />
                             <h5 className='py-4'>E-Gift Card</h5>
-                            <p>When in doubt what to buy as a gift, this is the
+                            <p className= ''>When in doubt what to buy as a gift, this is the
                                 <br />
                                 best option. Our gift cards have no expiration date
                                 <br />
@@ -84,6 +85,7 @@ const GiftCards = () => {
                         </div>
                     </div>
                 </div>
+                </div>
             </section>
 
             {/* FAQ section  */}
@@ -92,7 +94,7 @@ const GiftCards = () => {
                 <div className='container'>
                     <div className='text-center my-5'>
                         <h1 className='my-5'>Frequently Asked Questions</h1>
-                        <p>Here you can find answers on frequently asked questions. If you cannot
+                        <p className= 'light-black'>Here you can find answers on frequently asked questions. If you cannot
                             <br />
                             find the answer, feel free to contact us via email or phone.
                         </p>
@@ -106,7 +108,7 @@ const GiftCards = () => {
                                     </button>
                                 </h2>
                                 <div id="flush-collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                                    <div className="accordion-body">
+                                    <div className="accordion-body light-black">
 
                                         When in doubt what to buy as a gift, this is the best option. Our gift cards have no expiration date and can be used to pay for all the services in our beauty studio or in our cosmetic shop. Amount is flexible and you can personalize your gift card with a message.
                                         <br /><br />
@@ -126,7 +128,7 @@ const GiftCards = () => {
                                     </button>
                                 </h2>
                                 <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFAQ">
-                                    <div className="accordion-body">When in doubt what to buy as a gift, this is the best option. Our gift cards have no expiration date and can be used to pay for all the services in our beauty studio or in our cosmetic shop. Amount is flexible and you can personalize your gift card with a message. Our gift cards have no expiration date and can be used to pay for all the services in our beauty studio or in our cosmetic shop.</div>
+                                    <div className="accordion-body light-black">When in doubt what to buy as a gift, this is the best option. Our gift cards have no expiration date and can be used to pay for all the services in our beauty studio or in our cosmetic shop. Amount is flexible and you can personalize your gift card with a message. Our gift cards have no expiration date and can be used to pay for all the services in our beauty studio or in our cosmetic shop.</div>
                                 </div>
                             </div>
 
@@ -139,7 +141,7 @@ const GiftCards = () => {
                                     </button>
                                 </h2>
                                 <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFAQ">
-                                    <div className="accordion-body">Yes, You can pay for the service with your gift card. You can also add money with the gift card to take more service.</div>
+                                    <div className="accordion-body light-black">Yes, You can pay for the service with your gift card. You can also add money with the gift card to take more service.</div>
                                 </div>
                             </div>
 
