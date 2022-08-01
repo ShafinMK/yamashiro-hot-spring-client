@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Services.css';
 import '../../stylesheets/font and Color.css';
 import { Link, useNavigate } from 'react-router-dom';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const Services = () => {
     const [services, setServices] = useState([]);
@@ -16,6 +18,23 @@ const Services = () => {
         navigate(url);
         // console.log(url);
     }
+    // useing animation 
+    const { ref, inView } = useInView({ threshold: 0.2 });
+    // const animationLeft = useAnimation();
+    const animation = useAnimation();
+    useEffect(() => {
+        if (inView) {
+            
+            animation.start({
+                scale: 1,
+                transition: { duration: 2, type: 'spring', bounce: .3 }
+            });
+            console.log(inView);
+        }
+        
+
+    }, [inView]);
+    
     return (
         <div className='services-page-bg pb-5'>
             {/* banner */}
@@ -38,10 +57,10 @@ const Services = () => {
                         </div>
                     </div>
 
-                    <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4'>
+                    <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4' ref={ref}>
                         {
                             services.map(service => (
-                                <div className='col' key={service._id}>
+                                <motion.div className='col' key={service._id} initial={{scale:0}} animate={animation}>
                                     <div className='card service-card border-0 shadow'>
                                         <div className="service-img" style={{backgroundImage:`url(${service.serviceThumb})`}}>
                                             <div className="py-5"></div>
@@ -67,7 +86,7 @@ const Services = () => {
                                         </div>
 
                                     </div>
-                                </div>
+                                </motion.div>
                             ))
                         }
                     </div>

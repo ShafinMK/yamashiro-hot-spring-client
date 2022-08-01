@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Slider from 'react-slick/lib/slider';
 import './HomeSlider.css';
 
+
 const HomeSlider = () => {
     const settings = {
         dots: false,
@@ -17,15 +18,21 @@ const HomeSlider = () => {
         pauseOnHover: false
     };
     const [backgrounds, setBackgrounds] = useState([]);
+    
+
     useEffect(() => {
+        
         fetch('https://murmuring-ravine-46664.herokuapp.com/carousals/?imgfor=Home Heading Carousal')
             .then(res => res.json())
-            .then(data => setBackgrounds(data))
+            .then(data => {
+                setBackgrounds(data);     
+            })
+            
     }, []);
 
     return (
-        <div className=''>
-            {/* slider */}
+
+        <div>
             <Slider {...settings} className=''>
                 {
                     backgrounds.map(background => (
@@ -67,9 +74,10 @@ const HomeSlider = () => {
 
 
             </Slider>
-
         </div>
     );
+
+
 };
 
 export default HomeSlider;

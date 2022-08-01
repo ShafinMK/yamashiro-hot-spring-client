@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import './BeautyBox.css';
 import '../../../stylesheets/backgrounds.css';
 import '../../../stylesheets/buttons.css';
-import { motion } from "framer-motion"
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from 'react-intersection-observer';
 
 const BeautyBox = () => {
     const settings = {
@@ -19,10 +20,36 @@ const BeautyBox = () => {
         slidesToScroll: 1
 
     };
+    const { ref, inView } = useInView({ threshold: .6 });
+    const animationLeft = useAnimation();
+    const animationRight = useAnimation();
+    useEffect(() => {
+        if (inView) {
+            animationLeft.start({
+                x: 0,
+                transition: { duration: .5, type:'spring', bounce: .3 }
+            });
+            animationRight.start({
+                x: 0,
+                transition: { duration: .5 , type:'spring', bounce: .3}
+            });
+
+        }
+        // if (!inView) {
+        //     animationLeft.start({
+        //         x: '-100vw'
+        //     });
+        //     animationRight.start({
+        //         x: '100vw',
+        //         // transition: { duration: 1 }
+        //     });
+        // }
+
+    }, [inView])
     return (
         <div className=' my-5 '>
-            <div className='container py-5'>
-                <div className="row py-5 my-5 align-items-center">
+            <div className='container py-5' ref={ref}>
+                <motion.div className="row py-5 my-5 align-items-center" initial={{x:"-100vw"}} animate={animationLeft}>
                     <div className="col-12 col-lg-6 p-5">
                         <Slider {...settings}>
                             <div>
@@ -56,7 +83,7 @@ const BeautyBox = () => {
 
                     </div>
 
-                </div>
+                </motion.div>
             </div>
 
         </div>
