@@ -5,7 +5,7 @@ import './Gallery.css';
 const Gallery = () => {
     const [images, setImages] = useState([]);
     useEffect( ()=>{
-        fetch('http://localhost:5000/carousals/?imgfor=Home%20Heading%20Carousal')
+        fetch('https://murmuring-ravine-46664.herokuapp.com/carousals/?imgfor=Home%20Heading%20Carousal')
         .then(res => res.json())
         .then(data => setImages(data))
     }, [])

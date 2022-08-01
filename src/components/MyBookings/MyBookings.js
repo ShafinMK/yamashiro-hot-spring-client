@@ -10,7 +10,7 @@ const MyBookings = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/userbooking/?email=${email}`)
+        fetch(`https://murmuring-ravine-46664.herokuapp.com/userbooking/?email=${email}`)
             .then(res => res.json())
             .then(data => {
                 setBookings(data);
@@ -22,12 +22,12 @@ const MyBookings = () => {
 
     return (
         <div className='userbooking-bg'>
-             {/* banner */}
-             <section className='team-bg'>
+            {/* banner */}
+            <section className='team-bg'>
                 <div className='py-5'>
                     <div className="py-5"></div>
                     <h1 className='text-center text-light'>My Bookings</h1>
-                    
+
                     <div className="py-5"></div>
                 </div>
             </section>
@@ -69,6 +69,15 @@ const MyBookings = () => {
                         </div>
                     ))
                 }
+                {bookings.length<1? <div className='text-center'>
+                    <div className="row justify-content-center">
+                        <div className="col-12 col-md-3 ">
+                            <h5 className='py-5'>No Bookings yet</h5>
+                            <img src="https://cdn-icons-png.flaticon.com/512/5089/5089990.png" className='img-fluid' alt="" />
+
+                        </div>
+                    </div>
+                </div> : ''}
             </div>
         </div>
     );

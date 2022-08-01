@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const ServiceMenu = () => {
     return (
         <motion.div className='container py-5 text-center'  initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}   transition={{ delay: .2, duration: 1 }}  >
+        whileInView={{ opacity: 1 }}   transition={{ delay: .2, duration: 1 }} viewport={{ once: true }} >
             <h1 className='my-5 py-5'>Services</h1>
 
             <ul className="nav nav-pills mb-5 justify-content-center" style={{overlowX:'auto'}} id="pills-tab" role="tablist">

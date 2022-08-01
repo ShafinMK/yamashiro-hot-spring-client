@@ -30,7 +30,7 @@ const Booking = () => {
 
     // getting service info 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceid}`)
+        fetch(`https://murmuring-ravine-46664.herokuapp.com/services/${serviceid}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, []);
@@ -52,7 +52,7 @@ const Booking = () => {
     };
 
     const sendToServer = (data)=>{
-        axios.post('http://localhost:5000/booking', data)
+        axios.post('https://murmuring-ravine-46664.herokuapp.com/booking', data)
             .then(function (response) {
                 // console.log(response);
                 if (response.data.insertedId) {

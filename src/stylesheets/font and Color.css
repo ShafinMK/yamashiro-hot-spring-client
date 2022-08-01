@@ -6,12 +6,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 .green{
-    color: #60f375;
+    color: #28d05b;
 }
 .dark-gray{
     color: #596775;
 }
-
+.leaf-green{
+    color: #3e6939;
+}
 .orange-dark{
     color: #c67461;
 }
@@ -24,6 +26,9 @@
 }
 .orange{
     color: #f47e07;
+}
+.dark-blue{
+    color: #66a4bb ;
 }
 .pacifico-font{
     font-family: 'Pacifico', cursive;

@@ -8,6 +8,7 @@ const HomeSlider = () => {
         dots: false,
         autoplay: true,
         fade: true,
+        arrows: false,
         infinite: true,
         speed: 4000,
         autoplaySpeed: 6000,
@@ -17,7 +18,7 @@ const HomeSlider = () => {
     };
     const [backgrounds, setBackgrounds] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/carousals/?imgfor=Home Heading Carousal')
+        fetch('https://murmuring-ravine-46664.herokuapp.com/carousals/?imgfor=Home Heading Carousal')
             .then(res => res.json())
             .then(data => setBackgrounds(data))
     }, []);
@@ -39,7 +40,7 @@ const HomeSlider = () => {
                                 <div className='row justify-content-evenly text-white mt-5 '>
                                     <div className='col-12 col-lg-4'>
                                         <h6 className='py-3'>Contact</h6>
-                                        <span>+880-1311111111</span>
+                                        <span>+880-1311111112</span>
                                         <br />
                                         <span>shafinmuhammad28@gmail.com</span>
                                     </div>

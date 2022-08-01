@@ -17,6 +17,7 @@ import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import { useEffect } from "react";
 import Contacts from "./components/Contacts/Contacts";
 import MyBookings from "./components/MyBookings/MyBookings";
+import NotFound from "./components/NotFound/NotFound";
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
           {/* <Route path="/mybookings" element={<MyBookings/>}></Route> */}
           <Route path="/mybookings/:email" element={<PrivateRoute><MyBookings/></PrivateRoute>}></Route>
           <Route path="/booking/:serviceid" element={<PrivateRoute><Booking/></PrivateRoute>}></Route>
+          <Route path="*" element={<NotFound></NotFound>}></Route>
 
         </Routes>
         <Footer></Footer>
