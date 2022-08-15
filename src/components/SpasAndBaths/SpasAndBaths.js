@@ -7,7 +7,7 @@ import ForestHotWater from './ForestHotWater';
 
 const SpasAndBaths = () => {
     return (
-        <div className='spa-bath-bg pb-5'>
+        <div className='spa-bath-bg pb-5' >
             {/* banner */}
             <section className='spa-and-bath-bg'>
                 <div className='py-5'>

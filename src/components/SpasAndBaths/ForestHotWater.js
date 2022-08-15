@@ -22,7 +22,7 @@ const ForestHotWater = () => {
 
                     <div className=''>
                         {/*open air bath  */}
-                        <div className="row mt-5  align-items-center">
+                        <div className="row mt-5  align-items-center" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
                             <div className="col-12 col-lg-7 p-4">
                                 <img src='https://i.ibb.co/XDy2fbN/Open-air-baths.jpg' className='img-fluid' alt="" />
                             </div>
@@ -34,7 +34,7 @@ const ForestHotWater = () => {
 
                         </div>
                         {/* Cypress bath  */}
-                        <div className="row mt-5  align-items-center">
+                        <div className="row mt-5  align-items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                             <div className="col-12 col-lg-5 p-4">
                                 <h1 className='pacifico-font'><span className='dark-blue'>Cypress bath</span> (female area only)</h1>
                                 <p className='mt-3'>Savor the refreshing fragrance of a tub and entire room lavishly crafted from aromatic cypress as you pamper yourself and appreciate the scenic vista.
@@ -46,7 +46,7 @@ const ForestHotWater = () => {
                             </div>
                         </div>
                         {/* Pottery bath   */}
-                        <div className="row mt-5  align-items-center">
+                        <div className="row mt-5  align-items-center" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
                             <div className="col-12 col-lg-7 p-4">
                                 <img src='https://i.ibb.co/SXjYTRD/Pottery-bath.jpg' className='img-fluid w-100' alt="" />
                             </div>
@@ -58,7 +58,7 @@ const ForestHotWater = () => {
                         </div>
 
                         {/* Indoor bath */}
-                        <div className="row mt-5  align-items-center">
+                        <div className="row mt-5  align-items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                             <div className="col-12 col-lg-5 p-4">
                                 <h1 className='pacifico-font'><span className='dark-blue'>Indoor</span> bath</h1>
                                 <p className='mt-3'>Slow down and chat with friends in any weather while basking in our indoor hot spring. The big window with clear view of surrounding mountains creates a sense of oneness with nature.</p>
@@ -69,7 +69,7 @@ const ForestHotWater = () => {
                             </div>
                         </div>
                         {/* Reserved private room with baths */}
-                        <div className="row mt-5  align-items-center">
+                        <div className="row mt-5  align-items-center" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
                             <div className="col-12 col-lg-7 p-4">
                                 <img src='https://i.ibb.co/0JNvBcy/private-room-with-baths.jpg' className='img-fluid' alt="" />
                             </div>
@@ -81,7 +81,7 @@ const ForestHotWater = () => {
 
                         </div>
                         {/* Saunas */}
-                        <div className="row mt-5  align-items-center">
+                        <div className="row mt-5  align-items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                             <div className="col-12 col-lg-5 p-4">
                                 <h1 className='pacifico-font'><span className='dark-blue'>Saunas</span></h1>
                                 <p className='mt-3'>An invigorating dry sauna made of richly aromatic cypress invokes healthy sweating in the men’s area. Female guests can enjoy a mist sauna that comfortably moisturizes skin and hair.</p>
@@ -92,7 +92,7 @@ const ForestHotWater = () => {
                             </div>
                         </div>
                         {/* Lie down bath */}
-                        <div className="row mt-5  align-items-center">
+                        <div className="row mt-5  align-items-center" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
                             <div className="col-12 col-lg-7 p-4">
                                 <img src='https://i.ibb.co/RTBRHMS/Lie-down-bath.jpg' className='img-fluid w-100' alt="" />
                             </div>

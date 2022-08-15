@@ -1,6 +1,26 @@
-import React from 'react';
+import { useAnimation } from 'framer-motion';
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const Outdoor = () => {
+    // useing animation 
+    const { ref, inView } = useInView();
+    // const animationLeft = useAnimation();
+    const animation = useAnimation();
+    useEffect(() => {
+        // if (inView) {
+            
+        //     animation.start({
+        //         scale: 1,
+        //         transition: { duration: 2, type: 'spring', bounce: .3 }
+        //     });
+        //     console.log(inView);
+        // }
+        console.log('spa and bath', inView);
+        
+
+    }, [inView]);
+    
     return (
         <div>
             {/* ourdoor bath section  */}
@@ -23,18 +43,18 @@ const Outdoor = () => {
 
                     <div className=''>
                         {/* water  slide  */}
-                        <div className="row mt-5  align-items-center">
+                        <div className="row mt-5  align-items-center"  data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
                             <div className="col-12 col-lg-7 p-4">
                                 <img src='https://i.ibb.co/db4h1f8/mountain-water-slide.jpg' className='img-fluid' alt="" />
                             </div>
                             <div className="col-12 col-lg-5 p-4">
-                                <h1 className='pacifico-font'><span className='dark-blue'>Rodeo Mountain</span> <br /> water slides</h1>
+                                <h1 className='pacifico-font'><span className='dark-blue' >Rodeo Mountain</span> <br /> water slides</h1>
                                 <p className='mt-3'>Experience the thrill of river rapids on exciting water slides that are often featured in Japanese TV shows and magazines. Warm water keeps you cozy even in cold winter months, and you can admire a great vista of Hakone from the top. Try all three slides to compare their turns! (Minimum guest height: 110 cm)</p>
                             </div>
 
                         </div>
                         {/* outdoor hot spring  */}
-                        <div className="row mt-5  align-items-center">
+                        <div className="row mt-5  align-items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                             <div className="col-12 col-lg-5 p-4">
                                 <h1 className='pacifico-font'>Outdoor hot spring <br /> with <span className='dark-blue'>scenic view</span></h1>
                                 <p className='mt-3'>Relax surrounded by nature in our 40-meter hot spring bath while soaking up the beautiful sight of Hakone’s mountains and Sagami Bay when the weather is clear.</p>
@@ -45,7 +65,7 @@ const Outdoor = () => {
                             </div>
                         </div>
                         {/* cave baths    */}
-                        <div className="row mt-5  align-items-center">
+                        <div className="row mt-5  align-items-center" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
                             <div className="col-12 col-lg-7 p-4">
                                 <img src='https://i.ibb.co/BNcyd5G/cave-bath.jpg' className='img-fluid' alt="" />
                             </div>
@@ -57,7 +77,7 @@ const Outdoor = () => {
                         </div>
 
                         {/* dragons waterfall */}
-                        <div className="row mt-5  align-items-center">
+                        <div className="row mt-5  align-items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                             <div className="col-12 col-lg-5 p-4">
                                 <h1 className='pacifico-font'>Dragon’s <span className='dark-blue'>Waterfall</span></h1>
                                 <p className='mt-3'>Stand beneath the waterfall and feel it splash your body. Or play in its warm pool while relishing Hakone’s natural scenery.</p>

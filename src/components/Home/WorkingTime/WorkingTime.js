@@ -4,7 +4,7 @@ const WorkingTime = () => {
     return (
         <div className='py-5 '>
             <div className='container'>
-            <div className='row text-center my-5 py-5 justify-content-center'>
+            <div className='row text-center my-5 py-5 justify-content-center' data-aos="fade-up" data-aos-duration="1000">
                 <div className='col-12 col-md-6 col-lg-4 mb-3'>
                     <img src={require('../../../images/icons/phone.png')} className='img-fluid' width='40' alt="" />
                     <h6 className='py-3'>Contacts</h6>

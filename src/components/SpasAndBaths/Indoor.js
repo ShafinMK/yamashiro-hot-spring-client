@@ -23,7 +23,7 @@ const Indoor = () => {
 
                     <div className=''>
                         {/* aegean sea ofgods */}
-                        <div className="row mt-5  align-items-center">
+                        <div className="row mt-5  align-items-center" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
                             <div className="col-12 col-lg-7 p-4">
                                 <img src='https://i.ibb.co/tCLKq9W/Aegean-Sea-of-Gods.jpg' className='img-fluid' alt="" />
                             </div>
@@ -34,7 +34,7 @@ const Indoor = () => {
 
                         </div>
                         {/* wine bath  */}
-                        <div className="row mt-5  align-items-center">
+                        <div className="row mt-5  align-items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                             <div className="col-12 col-lg-5 p-4">
                                 <h1 className='pacifico-font'><span className='dark-blue'>Wine</span> bath</h1>
                                 <p className='mt-3'>Discover the joy of our vividly colorful and richly fragrant hot spring containing wine, a luxury adored by Cleopatra and Queen Mary for its skin rejuvenating qualities. Every day we add more wine at 10am, 1:30pm and 4pm for your viewing pleasure. No drinking, please.</p>
@@ -45,7 +45,7 @@ const Indoor = () => {
                             </div>
                         </div>
                         {/* Coffee bath    */}
-                        <div className="row mt-5  align-items-center">
+                        <div className="row mt-5  align-items-center" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
                             <div className="col-12 col-lg-7 p-4">
                                 <img src='https://i.ibb.co/sqTSt6S/Coffee-bath.jpg' className='img-fluid' alt="" />
                             </div>
@@ -57,7 +57,7 @@ const Indoor = () => {
                         </div>
 
                         {/* Dr. Fish foot bath */}
-                        <div className="row mt-5  align-items-center">
+                        <div className="row mt-5  align-items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                             <div className="col-12 col-lg-5 p-4">
                                 <h1 className='pacifico-font'><span className='dark-blue'>Dr. Fish</span> foot bath</h1>
                                 <p className='mt-3'>
@@ -72,7 +72,7 @@ const Indoor = () => {
                         </div>
 
                         {/* Splish-Splash pool    */}
-                        <div className="row mt-5  align-items-center">
+                        <div className="row mt-5  align-items-center" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
                             <div className="col-12 col-lg-7 p-4">
                                 <img src='https://i.ibb.co/82LntXs/Splish-Splash-pool.jpg' className='img-fluid' alt="" />
                             </div>
@@ -85,32 +85,32 @@ const Indoor = () => {
 
                         {/* other baths  */}
                         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5 text-center">
-                            <div className="col">
+                            <div className="col" data-aos="zoom-in" data-aos-once="false">
                                 <img src="https://i.ibb.co/q1DYS7t/Green-tea-bath.jpg" className='img-fluid' alt="" />
                                 <h4 className='my-3 pacifico-font'><span className='leaf-green'>Green tea</span> bath</h4>
                                 <p className=''>The vivid green hot spring water with soothing tea fragrance beautifies skin and improves blood circulation. No drinking, please.</p>
                             </div>
-                            <div className="col">
+                            <div className="col" data-aos="zoom-in" data-aos-once="false">
                                 <img src="https://i.ibb.co/Q6sDTWN/Japanese-sake-bath.jpg" className='img-fluid' alt="" />
                                 <h4 className='my-3 pacifico-font'><span className='leaf-green'>Japanese sake</span> bath</h4>
                                 <p className=''>Genuine Japanese sake drips down from a big barrel, but it’s not for drinking! It fills the air with a comforting aroma and enters the hot spring to warm you deep inside.</p>
                             </div>
-                            <div className="col">
+                            <div className="col" data-aos="zoom-in" data-aos-once="false">
                                 <img src="https://i.ibb.co/hWxH2yz/Green-terrace.jpg" className='img-fluid' alt="" />
                                 <h4 className='my-3 pacifico-font'><span className='leaf-green'>Green</span> terrace</h4>
                                 <p className=''>This sunny terrace with warm wooden decks features three baths and a Jacuzzi for your bathing pleasure. Check our Events page to see when our next unique bathing experience takes place there.</p>
                             </div>
-                            <div className="col">
+                            <div className="col" data-aos="zoom-in" data-aos-once="false">
                                 <img src="https://i.ibb.co/bXL0szY/hotstone-1.jpg" className='img-fluid' alt="" />
                                 <h4 className='my-3 pacifico-font'><span className='leaf-green'>Warmed</span> stone room</h4>
                                 <p className=''>Lie down on your tummy and rest in our Warmed stone room, where the comfortably warm stones will heat you deep down.</p>
                             </div>
-                            <div className="col">
+                            <div className="col" data-aos="zoom-in" data-aos-once="false">
                                 <img src="https://i.ibb.co/bzFwXxq/Finnish-sauna.jpg" className='img-fluid' alt="" />
                                 <h4 className='my-3 pacifico-font'><span className='leaf-green'>Finnish</span> sauna</h4>
                                 <p className=''>For a change of pace, spend some time sweating in our dry wooden sauna with beautiful window view. Hot springs are even more refreshing after this experience.</p>
                             </div>
-                            <div className="col">
+                            <div className="col" data-aos="zoom-in" data-aos-once="false">
                                 <img src="https://i.ibb.co/WPnpk4M/Aroma-room.jpg" className='img-fluid' alt="" />
                                 <h4 className='my-3 pacifico-font'><span className='leaf-green'>Aroma</span> room</h4>
                                 <p className=''>Refresh body and soul in a room with aromas that change every season.</p>

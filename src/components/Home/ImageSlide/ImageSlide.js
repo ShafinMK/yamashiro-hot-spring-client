@@ -13,7 +13,7 @@ const ImageSlide = () => {
         pauseOnHover: false
       };
     return (
-        <div className='container'>
+        <div className='container'  data-aos="fade-left" data-aos-duration="3000" data-aos-once="false">
             <Slider {...settings} className='row'>
                 <div className='col-12'>
                     <img src={require('../../../images/imageSlide/1.jpeg')} className='img-fluid w-100' alt="" />

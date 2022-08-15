@@ -18,7 +18,7 @@ const GiftCards = () => {
             <section>
                 <div className='container'>
                     <h1 className='text-center py-5'>Benefits</h1>
-                    <div className='row text-center  py-5 '>
+                    <div className='row text-center  py-5 ' data-aos="fade-up" data-aos-duration="1000">
                         <div className=' col-12 col-md-6 col-lg-4 p-3 feature '>
                             <img src={require('../../images/icons/give.png')} className='img-fluid' width='60' alt="" />
                             <h6 className='py-3'>Easy to give</h6>
@@ -58,7 +58,7 @@ const GiftCards = () => {
             <section className=' gift-bg-parallax'>
 
                 <div className='gift-parallax-text'>
-                <div className='container my-5 py-5 text-center '>
+                <div className='container my-5 py-5 text-center ' >
                     <div className="row align-items-center">
 
                         <div className="col-12 col-md-6 px-lg-5">

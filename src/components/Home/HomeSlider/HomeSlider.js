@@ -18,6 +18,7 @@ const HomeSlider = () => {
         pauseOnHover: false
     };
     const [backgrounds, setBackgrounds] = useState([]);
+    const count = 0;
     
 
     useEffect(() => {
@@ -35,7 +36,7 @@ const HomeSlider = () => {
         <div>
             <Slider {...settings} className=''>
                 {
-                    backgrounds.map(background => (
+                    backgrounds.slice(0, 2).map(background => (
                         <div key={background._id}>
                             <div className=' h-100 text-center p-5 carouBg' style={{ backgroundImage: `linear-gradient(0deg, rgba(20,20,9,0.639), rgba(20,20,9,0.639)),url(${background.imgurl})` }}>
 
@@ -44,7 +45,7 @@ const HomeSlider = () => {
                                     <Link to='/services'><button className='btn btn-light px-5 py-3'>Book Service</button></Link>
                                     <button className='btn btn-outline-light px-5 py-3 m-3'>Spas & baths</button>
                                 </div>
-                                <div className='row justify-content-evenly text-white mt-5 '>
+                                <div className='row justify-content-evenly text-white mt-5 ' data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
                                     <div className='col-12 col-lg-4'>
                                         <h6 className='py-3'>Contact</h6>
                                         <span>+880-1311111112</span>
@@ -69,7 +70,9 @@ const HomeSlider = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>))
+                        </div>
+                       
+                        ))
                 }
 
 
